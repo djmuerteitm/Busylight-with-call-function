@@ -4,6 +4,7 @@ Here is a complete, modular, and commented solution tailored for **PlatformIO** 
 
 1.  **platformio.ini**: Configuration file.
 2.  **src/main.cpp**: Source code.
+3.  Rename file to "main.cpp" first.
 
 ---
 
@@ -55,7 +56,7 @@ const char* ssid = "[YOUR-SSID]";
 const char* password = "[YOUR-WIFI-PASSWORD]";
 const char* mqtt_server = "[YOUR-MQQT-BROKER-NOUSER-NOPASSWORD]";
 const int   mqtt_port = 1883;
-const char* topic_sub = "busylight";
+const char* topic_sub = "busylight"; //DO NOT CHANGE TOPIC
 const char* topic_pub = "busylight/status"; // Optional: to publish logic
 
 WiFiClient espClient;
