@@ -5,6 +5,7 @@ Here is the complete C++ solution for **PlatformIO** using the M5Core2.
 You need a **PlatformIO** project.
 1. Create a new project for board **M5Stack Core2**.
 2. Edit `platformio.ini` to include the required libraries.
+3. Rename main_m5core2.cpp to main.cpp before open.
 
 #### `platformio.ini`
 ```ini
@@ -39,7 +40,7 @@ const char* ssid = "[YOUR-SSID]";
 const char* password = "[YOUR-WIFI-PASSWORD]";
 const char* mqtt_server = "[YOUR-MQQT-BROKER-NOUSER-NOPASSWORD]";
 const int mqtt_port = 1883;
-const char* mqtt_topic = "busylight";
+const char* mqtt_topic = "busylight"; // DO NOT CHANGE TOPIC!!!
 
 // COMENTARIO: Definición de Estados del Sistema
 enum SystemState {
